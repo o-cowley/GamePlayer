@@ -36,8 +36,6 @@ public class GameBoard extends JPanel {
         frame.setVisible(true);
     }
 
-
-
     public void paint(Graphics g) {
         paintBackDrop(g);
         paintXs(g);
@@ -61,12 +59,6 @@ public class GameBoard extends JPanel {
             }
             i++;
         }
-    }
-
-
-
-    public static void main(String[] args) {
-
     }
 
     private class Clicks extends MouseAdapter {
