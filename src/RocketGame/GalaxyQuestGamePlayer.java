@@ -151,8 +151,16 @@ public class GalaxyQuestGamePlayer extends JPanel implements ActionListener {
                     break;
             }
         }
-        if(ship.getScore() > 100) {
+        if(ship.getScore() > 5) {
+            stopAllTimers();
+            JOptionPane.showMessageDialog(mainFrame, "Congrats, You won!");
             mainFrame.dispose();
         }
+    }
+
+    private void stopAllTimers() {
+        timer.stop();
+        alienTimer.stop();
+        powerUpTimer.stop();
     }
 }

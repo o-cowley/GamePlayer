@@ -76,15 +76,16 @@ public class TicTacToeGamePlayer extends JPanel {
                     try {
 
                         game.placeToken(p.getSquareLabel());
+                        repaint();
                         if (game.checkWin()) {
-                            System.out.println("Yay you won!");
+                            JOptionPane.showMessageDialog(frame, "Congrats, You won!");
                             frame.dispose();
                         }
                         game.nextTurn();
-                        repaint();
+
                         break;
                     } catch (PositionTakenException pe) {
-                        System.out.println("nah bro");
+                        JOptionPane.showMessageDialog(frame,"nah bro, you can't go there");
                     }
                 }
             }

@@ -188,7 +188,7 @@ public class Catch extends JPanel {
             if ((oneX >= mouseX - 25) && (oneX + ballWidth <= mouseX + 25)
                     && (oneY + ballHeight >= mouseY + 10) && (oneY + ballHeight <= mouseY + 25) && (down)) {
                 timer.stop();
-                JOptionPane.showMessageDialog(frame, "Congrats! You can use the program now.");
+                JOptionPane.showMessageDialog(frame, "Congrats, You won!");
                 frame.dispose();
             }
         }
