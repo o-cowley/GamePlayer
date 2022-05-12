@@ -78,7 +78,7 @@ public class TicTacToeGamePlayer extends JPanel {
                         game.placeToken(p.getSquareLabel());
                         if (game.checkWin()) {
                             System.out.println("Yay you won!");
-                            System.exit(0);
+                            frame.dispose();
                         }
                         game.nextTurn();
                         repaint();

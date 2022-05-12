@@ -151,5 +151,8 @@ public class GalaxyQuestGamePlayer extends JPanel implements ActionListener {
                     break;
             }
         }
+        if(ship.getScore() > 100) {
+            mainFrame.dispose();
+        }
     }
 }
